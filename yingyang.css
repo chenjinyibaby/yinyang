@@ -1,0 +1,36 @@
+div{ 
+   width: 96px;
+   height:48px;
+   box-sizing: content-box;
+   /*允许以特定的方式匹配某个区域的特定元素：通过从已设定的宽度和高度分别减去边
+   框和内边距才能得到内容的宽度和高度*/
+   background:#eee;
+   border: solid red;
+   border-width: 2px 2px 50px 2px;/*为元素的所有边框设置宽度，或者单独地为各边边框设置宽度*/
+   border-radius: 100% ;/*允许您为元素添加圆角边框 */
+   position: relative;
+}
+div.before{
+   content: "";
+   position: absolute;/*子元素与父元素绝对定位*/
+   top: 50%;/*配合具体定位的位置，left、right、top、bottom*/
+   left: 0;
+   background: #eee;
+   border: 18px solid red;
+   border-radius: 100%;
+   width: 12px;
+   height: 12px;
+   box-sizing: content-box;
+}
+div.after{
+   content: "";
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   background: red;
+   border: 18px solid #eee ;
+   border-radius: 100%;
+   width: 12px;
+   height: 12px;
+   box-sizing: content-box;
+}
